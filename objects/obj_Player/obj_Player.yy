@@ -37,8 +37,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "scr_Player",
-    "path": "sprites/scr_Player/scr_Player.yy",
+    "name": "spr_Player",
+    "path": "sprites/spr_Player/spr_Player.yy",
   },
   "spriteMaskId": null,
   "visible": true,
