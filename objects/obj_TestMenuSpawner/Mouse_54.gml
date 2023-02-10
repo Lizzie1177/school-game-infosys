@@ -13,6 +13,7 @@ Menu
 		["Option D", -1],
 		["Quit Game", MenuQuit]
 	],
-	"Choose an option!"
+	"Choose an option!",
+	8
 
 );
