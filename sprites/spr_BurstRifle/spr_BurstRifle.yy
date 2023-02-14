@@ -1,8 +1,8 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_Enemy",
-  "bbox_bottom": 63,
+  "name": "spr_BurstRifle",
+  "bbox_bottom": 31,
   "bbox_left": 0,
   "bbox_right": 63,
   "bbox_top": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e769bfa3-c368-4d31-a2b3-afc37696daec",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2ec07d27-3834-4956-8987-92d5e57526e2",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 64,
+  "height": 32,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"478fa695-df86-4440-b792-d6f73f31c1c2","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6b7d0cac-fcde-4d23-96ed-11b319bdba1a","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_Enemy",
+    "name": "spr_BurstRifle",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,13 +54,13 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e769bfa3-c368-4d31-a2b3-afc37696daec","path":"sprites/spr_Enemy/spr_Enemy.yy",},},},"Disabled":false,"id":"26e8f2fb-498d-46c4-988d-6b27518b5bd5","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2ec07d27-3834-4956-8987-92d5e57526e2","path":"sprites/spr_BurstRifle/spr_BurstRifle.yy",},},},"Disabled":false,"id":"d3f1e1d4-6a5d-453d-80b4-12855425ccb1","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 32,
-    "yorigin": 32,
+    "yorigin": 16,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

@@ -1,8 +1,8 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_Enemy",
-  "bbox_bottom": 63,
+  "name": "spr_Shotgun",
+  "bbox_bottom": 31,
   "bbox_left": 0,
   "bbox_right": 63,
   "bbox_top": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e769bfa3-c368-4d31-a2b3-afc37696daec",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"eb3878cc-248d-40d3-9548-661ddbb115f9",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 64,
+  "height": 32,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"478fa695-df86-4440-b792-d6f73f31c1c2","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"36e199e7-f00a-4b4d-ac5e-b3302094a2b6","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_Enemy",
+    "name": "spr_Shotgun",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,13 +54,13 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e769bfa3-c368-4d31-a2b3-afc37696daec","path":"sprites/spr_Enemy/spr_Enemy.yy",},},},"Disabled":false,"id":"26e8f2fb-498d-46c4-988d-6b27518b5bd5","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"eb3878cc-248d-40d3-9548-661ddbb115f9","path":"sprites/spr_Shotgun/spr_Shotgun.yy",},},},"Disabled":false,"id":"c3366ad7-58c2-4d01-9f67-087fa8a54cee","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 32,
-    "yorigin": 32,
+    "yorigin": 16,
   },
   "swatchColours": null,
   "swfPrecision": 2.525,

@@ -55,7 +55,7 @@ function MainOptionsMenuClose()
 	0,
 	0,
 	[
-		["Start Game", -1],
+		["Start Game", StartGame],
 		["Options", SpawnOptionMenu],
 		["Quit Game", MenuQuit]
 	],
@@ -78,8 +78,72 @@ function SpawnOptionMenu()
 		],
 		"Options Menu",
 		12,
-		true,
+		true
 		)	
 	instance_destroy();
 }
 
+function SpawnPauseMenu()
+{
+	Menu(
+	0,
+	0,
+	[
+		["Resume Game",PauseMenuClose],
+		["Options", SpawnInGameOptionsMenu],
+		["Quit Game",SpawnQuitMenu]
+	],
+	"Pause Menu",
+	12,
+	true)
+	
+}
+
+function SpawnInGameOptionsMenu()
+{
+			Menu(
+		0,
+		0,
+		[
+			["Delete Save", DeleteSave],
+			["Close Menu", ReSpawnPauseMenu]
+		],
+		"Options Menu",
+		12,
+		true
+		)	
+	instance_destroy();
+}
+
+function ReSpawnPauseMenu()
+{
+	SpawnPauseMenu();
+	instance_destroy();
+}
+
+function PauseMenuClose()
+{
+	GameManager.gamePaused = false;
+	instance_destroy();
+}
+
+function StartGame()
+{
+	GameManager.inGame = true
+	room_goto_next();
+}
+
+function SpawnQuitMenu()
+{
+	Menu(
+	0,
+	0,
+	[
+		["Yes",game_end],
+		["No", ReSpawnPauseMenu]
+	],
+	"Are you sure you want to quit?",
+	12,
+	true)
+	instance_destroy();
+}

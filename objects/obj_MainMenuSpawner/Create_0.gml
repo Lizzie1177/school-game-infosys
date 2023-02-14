@@ -8,7 +8,7 @@ Menu
 	x,
 	y,
 	[
-		["Start Game", -1],
+		["Start Game", StartGame],
 		["Options", SpawnOptionMenu],
 		["Quit Game", MenuQuit]
 	],
