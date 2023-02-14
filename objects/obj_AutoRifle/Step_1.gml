@@ -10,20 +10,17 @@ if (!GameManager.gamePaused)
 	if (firingDelay > 0) firingDelay -= 1;
 	if (reloadDelay > 0) reloadDelay -= delta_time;
 	
-	if (mouse_check_button_pressed(mb_left)) && (firingDelay <= 0)  && (reloadDelay <= 0)
+	if (mouse_check_button(mb_left)) && (firingDelay <= 0)  && (reloadDelay <= 0)
 	{
 		if (obj_Player.currentAmmo > 0)
 		{
 			firingDelay = fireRate * obj_Player.fireRateMod;
-			for (i = 0; i < 7; i++)
-			{
-				with(instance_create_layer(x + lengthdir_x(20,image_angle),y + lengthdir_y(20,image_angle),"Bullets", obj_Bullet))
+			with(instance_create_layer(x + lengthdir_x(20,image_angle),y + lengthdir_y(20,image_angle),"Bullets", obj_Bullet))
 				{
 					bulletSpeed = 15;
 					direction = other.image_angle + random_range(-15, 15);
 					image_angle = direction;
 				}
-			}
 			--obj_Player.currentAmmo;
 		}
 	}

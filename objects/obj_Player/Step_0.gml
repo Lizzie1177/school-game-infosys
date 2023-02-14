@@ -7,7 +7,7 @@ if (!GameManager.gamePaused)
 	key_right = keyboard_check(ord("D"));
 	key_up = keyboard_check(ord("W"));
 	key_down = keyboard_check(ord("S"));
-
+	next_weapon = mouse_wheel_up() || mouse_wheel_down();
 
 	//calculate movement
 	var hmove = key_right - key_left;
@@ -37,6 +37,35 @@ if (!GameManager.gamePaused)
 		}
 		vsp = 0;
 	}
+
+
+
+
+
+	//weapon switching
+	if (next_weapon) && !(equippedWeapon = noone)
+	{
+		if(instance_exists(obj_Pistol))
+		{
+			instance_destroy(obj_Pistol);
+			instance_create_layer(x,y,"Gun", equippedWeapon);
+		}
+		else
+		{
+			instance_destroy(equippedWeapon);
+			instance_create_layer(x,y,"Gun", obj_Pistol);
+		}
+		
+		
+		show_debug_message("weapon equipped " + string(equippedWeapon));
+	}
+	else if (next_weapon)
+	{
+		show_debug_message("No weapon equipped");
+	}
+
+
+
 
 
 

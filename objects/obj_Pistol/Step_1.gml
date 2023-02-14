@@ -11,7 +11,7 @@ if (!GameManager.gamePaused)
 	if (mouse_check_button_pressed(mb_left)) && (firingDelay < 0)
 	{
 	
-		firingDelay = 12 * obj_Player.fireRateMod;
+		firingDelay = fireRate * obj_Player.fireRateMod;
 		with(instance_create_layer(x + lengthdir_x(20,image_angle),y + lengthdir_y(20,image_angle),"Bullets", obj_Bullet))
 		{
 			bulletSpeed = 15;
