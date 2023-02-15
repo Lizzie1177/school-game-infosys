@@ -20,8 +20,9 @@ function ReadSave()
 		
 		show_debug_message(string(filename_path("save.txt")));
 		show_debug_message("Is Optional Character Unlocked: " + string(_loadData.optionalCharacter1));
-		//GameManager.OptionalCharacter1Unlocked = _loadData.optionalCharacter1;
-		//GameManager.OptionalCharacter2Unlocked = _loadData.OptionalCharacter2;
+		//UpdateData in GameManager
+		GameManager.OptionalCharacter1Unlocked = _loadData.optionalCharacter1;
+		GameManager.OptionalCharacter2Unlocked = _loadData.optionalCharacter2;
 	}
 	else
 	{

@@ -129,8 +129,11 @@ function PauseMenuClose()
 
 function StartGame()
 {
-	GameManager.inGame = true
-	room_goto_next();
+	ReadSave();
+	instance_create_depth(room_width/4,room_height/3,depth,obj_Character1);
+	instance_create_depth((room_width/4)*2,room_height/3,depth,obj_Character2);
+	instance_create_depth((room_width/4)*3,room_height/3,depth,obj_Character3);
+	instance_destroy();
 }
 
 function SpawnQuitMenu()
