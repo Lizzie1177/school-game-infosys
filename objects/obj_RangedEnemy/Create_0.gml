@@ -79,7 +79,7 @@ StateShooting = function()
 	{
 		shootTimer = shootCooldown;
 		
-		with(instance_create_layer(x + lengthdir_x(20,point_direction(x,y,obj_Player.x,obj_Player.y)),y + lengthdir_y(20,point_direction(x,y,obj_Player.x,obj_Player.y)),"Bullets", obj_EnemyBullet))
+		with(instance_create_layer(x + lengthdir_x(20,point_direction(x,y,obj_Player.x,obj_Player.y)),y + lengthdir_y(20,point_direction(x,y,obj_Player.x,obj_Player.y)),"Enemy_Bullets", obj_EnemyBullet))
 				{
 					bulletSpeed = 7;
 					direction = point_direction(x,y,obj_Player.x,obj_Player.y) + random_range(-10, 10);

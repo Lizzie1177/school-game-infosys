@@ -11,6 +11,9 @@ dodgeDistance = GameManager.dodgeDistance;
 dodgeCooldown = GameManager.dodgeCooldown;
 dodgeTimer = GameManager.dodgeTimer;
 
+roomStartX = room_width / 2;
+roomStartY = room_height / 2;
+
 currentHP = maxHP;
 currentClears = maxClears;
 
@@ -60,11 +63,13 @@ StateFree = function()
 		if(instance_exists(obj_Pistol))
 		{
 			instance_destroy(obj_Pistol);
+			pistolEquipped = false;
 			instance_create_layer(x,y,"Gun", equippedWeapon);
 		}
 		else
 		{
 			instance_destroy(equippedWeapon);
+			pistolEquipped = true;
 			instance_create_layer(x,y,"Gun", obj_Pistol);
 		}
 		
