@@ -11,5 +11,9 @@ if (!GameManager.gamePaused)
 	key_dodge = mouse_check_button_pressed(mb_right);
 
 	state();
-
+	
+	if (currentHP <= 0)
+	{
+		state = StateDead;
+	}
 }

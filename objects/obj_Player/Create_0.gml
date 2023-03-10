@@ -129,4 +129,9 @@ StateDodge = function()
 	}
 }
 
+StateDead = function()
+{
+	sprite_index = spr_GameLogo;
+}
+
 state = StateFree;
