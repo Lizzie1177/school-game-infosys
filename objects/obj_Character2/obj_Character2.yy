@@ -9,7 +9,15 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":11,"eventType":6,"isDnD":false,},
   ],
   "managed": true,
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_Character1","path":"objects/obj_Character1/obj_Character1.yy",},"propertyId":{"name":"maxHP","path":"objects/obj_Character1/obj_Character1.yy",},"value":"4",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_Character1","path":"objects/obj_Character1/obj_Character1.yy",},"propertyId":{"name":"moveSpd","path":"objects/obj_Character1/obj_Character1.yy",},"value":"4.25",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_Character1","path":"objects/obj_Character1/obj_Character1.yy",},"propertyId":{"name":"reloadMod","path":"objects/obj_Character1/obj_Character1.yy",},"value":"1.25",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_Character1","path":"objects/obj_Character1/obj_Character1.yy",},"propertyId":{"name":"fireRateMod","path":"objects/obj_Character1/obj_Character1.yy",},"value":"1.25",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_Character1","path":"objects/obj_Character1/obj_Character1.yy",},"propertyId":{"name":"isGrowing","path":"objects/obj_Character1/obj_Character1.yy",},"value":"True",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_Character1","path":"objects/obj_Character1/obj_Character1.yy",},"propertyId":{"name":"hasRoomClearEvent","path":"objects/obj_Character1/obj_Character1.yy",},"value":"False",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_Character1","path":"objects/obj_Character1/obj_Character1.yy",},"propertyId":{"name":"dodgeCooldown","path":"objects/obj_Character1/obj_Character1.yy",},"value":"10",},
+  ],
   "parent": {
     "name": "MenuStuff",
     "path": "folders/Objects/MenuStuff.yy",
@@ -32,7 +40,7 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"isUnlocked","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"isUnlocked","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":1,},
   ],
   "solid": false,
   "spriteId": {

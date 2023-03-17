@@ -8,3 +8,5 @@ if (state = StateChasing)
 	state = StateRecoil;
 	other.currentHP -= 1;
 }
+
+if (other.isGrowing) other.bonusDamage = 0;

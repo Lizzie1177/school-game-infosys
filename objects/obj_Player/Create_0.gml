@@ -10,6 +10,13 @@ maxClears = GameManager.maxClears;
 dodgeDistance = GameManager.dodgeDistance;
 dodgeCooldown = GameManager.dodgeCooldown;
 dodgeTimer = GameManager.dodgeTimer;
+accuracyMod = GameManager.accuracyMod;
+extraProjectileMod = GameManager.extraProjectileMod;
+hasRoomClearEvent = GameManager.hasRoomClearEvent
+roomClearEvent = GameManager.roomClearEvent;
+isFrail = GameManager.isFrail;
+isGrowing = GameManager.isGrowing;
+isBottomless = GameManager.isBottomless;
 
 roomStartX = room_width / 2;
 roomStartY = room_height / 2;

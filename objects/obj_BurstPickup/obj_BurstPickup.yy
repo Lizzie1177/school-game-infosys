@@ -4,16 +4,17 @@
   "name": "obj_BurstPickup",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_Player","path":"objects/obj_Player/obj_Player.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Pickups",
-    "path": "folders/Objects/Pickups.yy",
+    "name": "Guns",
+    "path": "folders/Objects/Pickups/Guns.yy",
   },
   "parentObjectId": {
-    "name": "obj_Pickup",
-    "path": "objects/obj_Pickup/obj_Pickup.yy",
+    "name": "par_Pickup",
+    "path": "objects/par_Pickup/par_Pickup.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

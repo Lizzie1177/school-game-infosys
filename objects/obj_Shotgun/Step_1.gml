@@ -14,23 +14,23 @@ if (!GameManager.gamePaused)
 	{
 		if (obj_Player.currentAmmo > 0)
 		{
-			firingDelay = fireRate * obj_Player.fireRateMod;
-			for (i = 0; i < 7; i++)
+			firingDelay = fireRate / obj_Player.fireRateMod;
+			for (i = 0; i < 7 + obj_Player.extraProjectileMod; i++)
 			{
 				with(instance_create_layer(x + lengthdir_x(20,image_angle),y + lengthdir_y(20,image_angle),"Bullets", obj_Bullet))
 				{
 					bulletSpeed = 15;
-					direction = other.image_angle + random_range(-15, 15);
+					direction = other.image_angle + random_range(-max(other.innateAccuracy/obj_Player.accuracyMod,1), max(other.innateAccuracy/obj_Player.accuracyMod,1));
 					image_angle = direction;
 				}
 			}
-			--obj_Player.currentAmmo;
+			if (!obj_Player.isBottomless) obj_Player.currentAmmo--;
 		}
 	}
 	
 	if (keyboard_check_pressed(ord("R"))) && (reloadDelay <= 0) && (obj_Player.currentAmmo != obj_Player.maxAmmo)
 	{
-		reloadDelay = reloadTime * obj_Player.reloadMod * SECOND;
+		reloadDelay = reloadTime / obj_Player.reloadMod * SECOND;
 		obj_Player.currentAmmo = obj_Player.maxAmmo;
 	}
 }

@@ -2,7 +2,28 @@
 // You can write your code in this editor
 if (!locked)
 {
-	room_goto(targetRoom);
+	
+	switch(ds_grid_get(GameManager.roomGrid,targetRoomFloor,targetRoomNum))
+	{
+		case 0: 
+			room_goto(targetRoom);
+			break;
+		
+		case 1:
+			room_goto(targetRoomAlt);
+			break;
+			
+		case 2: 
+			room_goto(targetRoomAltTwo);
+			break;
+			
+		default:
+			room_goto(rm_1_spawn);
+			break;
+		
+	}
+	
+	
 	switch (side)
 	{
 		case "east":

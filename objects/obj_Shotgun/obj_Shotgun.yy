@@ -13,7 +13,10 @@
     "name": "Guns",
     "path": "folders/Objects/Guns.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "par_Gun",
+    "path": "objects/par_Gun/par_Gun.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -32,6 +35,7 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"reloadTime","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"3","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"reloadDelay","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"fireRate","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"45","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"innateAccuracy","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"16","varType":0,},
   ],
   "solid": false,
   "spriteId": {

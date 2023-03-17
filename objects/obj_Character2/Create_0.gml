@@ -3,3 +3,5 @@
 
 if (GameManager.OptionalCharacter1Unlocked) isUnlocked = true;
 else image_blend = c_dkgrey;
+
+roomClearEvent = NoRoomClearEvent;
