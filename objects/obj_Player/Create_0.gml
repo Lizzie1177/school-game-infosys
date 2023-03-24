@@ -44,7 +44,7 @@ StateFree = function()
 		state = StateDodge;
 	}
 
-	//Collision
+	//Collision Wall
 	//Horizontal
 	if (place_meeting(x+hsp,y,obj_Wall))
 	{
@@ -63,6 +63,30 @@ StateFree = function()
 		}
 		vsp = 0;
 	}
+
+	//Horizontal Door
+	if (place_meeting(x+hsp,y,obj_Door) && obj_Door.locked)
+	{
+		while(!place_meeting(x+sign(hsp), y, obj_Door))
+		{
+			x += sign(hsp);
+		}
+		hsp = 0;
+	}
+	//Vertical Door
+	if (place_meeting(x,y+vsp,obj_Door) && obj_Door.locked)
+	{
+		while(!place_meeting(x, y+sign(vsp), obj_Door))
+		{
+			y += sign(vsp);
+		}
+		vsp = 0;
+	}
+
+
+
+
+
 
 	//weapon switching
 	if (next_weapon) && !(equippedWeapon = noone)
