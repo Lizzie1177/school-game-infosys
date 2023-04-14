@@ -63,6 +63,46 @@ StateChasing = function()
 		vsp = 0;
 	}
 	
+	//Horizontal Door
+	if (place_meeting(x+hsp,y,obj_Door))
+	{
+		while(!place_meeting(x+sign(hsp), y, obj_Door))
+		{
+			x += sign(hsp);
+		}
+		hsp = 0;
+	}
+	//Vertical Door
+	if (place_meeting(x,y+vsp,obj_Door))
+	{
+		while(!place_meeting(x, y+sign(vsp), obj_Door))
+		{
+			y += sign(vsp);
+		}
+		vsp = 0;
+	}
+	
+	
+	//Horizontal Pit
+	if (place_meeting(x+hsp,y,obj_Pit))
+	{
+		while(!place_meeting(x+sign(hsp), y, obj_Pit))
+		{
+			x += sign(hsp);
+		}
+		hsp = 0;
+	}
+	//Vertical
+	if (place_meeting(x,y+vsp,obj_Pit))
+	{
+		while(!place_meeting(x, y+sign(vsp), obj_Pit))
+		{
+			y += sign(vsp);
+		}
+		vsp = 0;
+	}
+	
+	
 	x += hsp;
 	y += vsp;
 }

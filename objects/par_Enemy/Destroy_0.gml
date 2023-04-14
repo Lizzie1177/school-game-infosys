@@ -4,7 +4,11 @@ with (obj_Player)
 {
 	if (isGrowing)
 	{
-		bonusDamage +=1;
-		show_debug_message("Damage increased");
+		growingCounter +=1;
+		if (growingCounter > 3) 
+		{
+			if (bonusDamage < 2) bonusDamage += 1;
+			growingCounter = 0;
+		}
 	}
 }

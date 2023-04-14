@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+if (instance_number(obj_Player) > 1) instance_destroy();
 
 maxHP = GameManager.maxHP;
 moveSpd = GameManager.moveSpd;
@@ -83,7 +83,24 @@ StateFree = function()
 		vsp = 0;
 	}
 
-
+	//Horizontal Pit
+	if (place_meeting(x+hsp,y,obj_Pit))
+	{
+		while(!place_meeting(x+sign(hsp), y, obj_Pit))
+		{
+			x += sign(hsp);
+		}
+		hsp = 0;
+	}
+	//Vertical
+	if (place_meeting(x,y+vsp,obj_Pit))
+	{
+		while(!place_meeting(x, y+sign(vsp), obj_Pit))
+		{
+			y += sign(vsp);
+		}
+		vsp = 0;
+	}
 
 
 
@@ -152,6 +169,30 @@ StateDodge = function()
 		vsp = 0;
 	}
 	
+	
+	//Horizontal Door
+	if (place_meeting(x+hsp,y,obj_Door) && obj_Door.locked)
+	{
+		while(!place_meeting(x+sign(hsp), y, obj_Door))
+		{
+			x += sign(hsp);
+		}
+		hsp = 0;
+	}
+	//Vertical Door
+	if (place_meeting(x,y+vsp,obj_Door) && obj_Door.locked)
+	{
+		while(!place_meeting(x, y+sign(vsp), obj_Door))
+		{
+			y += sign(vsp);
+		}
+		vsp = 0;
+	}
+	
+
+	
+	
+	
 	x += hsp;
 	y += vsp;
 	
@@ -165,9 +206,18 @@ StateDodge = function()
 	}
 }
 
+StateFalling = function()
+{
+	
+}
+
 StateDead = function()
 {
-	sprite_index = spr_GameLogo;
+	instance_destroy(par_Gun);
+	instance_destroy();
+	room_goto(Room_MainMenu);
 }
+
+
 
 state = StateFree;
