@@ -88,6 +88,7 @@
     {"name":"obj_Wall","order":2,"path":"objects/obj_Wall/obj_Wall.yy",},
     {"name":"rm_1_2v2","order":14,"path":"rooms/rm_1_2v2/rm_1_2v2.yy",},
     {"name":"obj_Shotgun","order":3,"path":"objects/obj_Shotgun/obj_Shotgun.yy",},
+    {"name":"SHOWROOM","order":3,"path":"rooms/SHOWROOM/SHOWROOM.yy",},
     {"name":"rm_2_4v1","order":4,"path":"rooms/rm_2_4v1/rm_2_4v1.yy",},
     {"name":"rm_1_1v2","order":12,"path":"rooms/rm_1_1v2/rm_1_1v2.yy",},
     {"name":"rm_2_10v1","order":11,"path":"rooms/rm_2_10v1/rm_2_10v1.yy",},
